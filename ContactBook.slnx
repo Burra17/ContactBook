@@ -1,1 +1,8 @@
-<Solution />
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ContactBook.API/ContactBook.API.csproj" />
+    <Project Path="src/ContactBook.Application/ContactBook.Application.csproj" />
+    <Project Path="src/ContactBook.Domain/ContactBook.Domain.csproj" />
+    <Project Path="src/ContactBook.Infrastructure/ContactBook.Infrastructure.csproj" />
+  </Folder>
+</Solution>
