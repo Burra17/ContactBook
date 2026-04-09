@@ -1,3 +1,5 @@
+using ContactBook.Application;
+using ContactBook.Infrastructure;
 
 namespace ContactBook.API
 {
@@ -12,6 +14,11 @@ namespace ContactBook.API
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            // Add services from Application and Infrastructure layers
+            builder.Services.AddApplication();
+            builder.Services.AddInfrastructure(builder.Configuration);
+
 
             var app = builder.Build();
 
