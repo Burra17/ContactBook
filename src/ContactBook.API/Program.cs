@@ -1,5 +1,6 @@
 using ContactBook.Application;
 using ContactBook.Infrastructure;
+using Scalar.AspNetCore;
 
 namespace ContactBook.API
 {
@@ -26,6 +27,7 @@ namespace ContactBook.API
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+                app.MapScalarApiReference();
             }
 
             app.UseHttpsRedirection();
