@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace ContactBook.Application.Contacts;
+namespace ContactBook.Application.Contacts.Commands.CreateContact;
 
 public class CreateContactValidator : AbstractValidator<CreateContactCommand>
 {

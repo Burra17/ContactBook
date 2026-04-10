@@ -1,3 +1,4 @@
+using ContactBook.Application.Contacts.Commands.CreateContact;
 using ContactBook.Application.Interfaces;
 using ContactBook.Domain.Models;
 using ContactBook.Domain.Shared;
