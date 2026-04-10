@@ -22,6 +22,9 @@ public abstract class BaseApiController : ControllerBase
         if (result.IsSuccess && result.Data == null)
             return NotFound();
 
+        if (result.IsNotFound)
+            return NotFound(result.ErrorMessage);
+
         return BadRequest(result.ErrorMessage);
     }
 
@@ -31,6 +34,9 @@ public abstract class BaseApiController : ControllerBase
 
         if (result.IsSuccess)
             return Ok();
+
+        if (result.IsNotFound)
+            return NotFound(result.ErrorMessage);
 
         return BadRequest(result.ErrorMessage);
     }

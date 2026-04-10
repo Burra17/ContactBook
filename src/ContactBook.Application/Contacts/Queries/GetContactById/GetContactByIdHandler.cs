@@ -20,7 +20,7 @@ public class GetContactByIdHandler : IRequestHandler<GetContactByIdQuery, Operat
 
         if (contact is null)
         {
-            return OperationResult<ContactDto>.Failure("Contact not found.");
+            return OperationResult<ContactDto>.NotFound("Contact not found.");
         }
         
         var contactDto = new ContactDto(
