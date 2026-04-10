@@ -8,5 +8,5 @@ public interface IContactRepository
     Task<IEnumerable<Contact>> GetAllAsync();
     Task AddAsync(Contact contact);
     Task UpdateAsync(Contact contact);
-    Task DeleteAsync(Guid id);
+    Task DeleteAsync(Contact contact);
 }

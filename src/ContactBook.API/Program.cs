@@ -1,3 +1,4 @@
+using ContactBook.API.Middleware;
 using ContactBook.Application;
 using ContactBook.Infrastructure;
 using Scalar.AspNetCore;
@@ -29,6 +30,8 @@ namespace ContactBook.API
                 app.MapOpenApi();
                 app.MapScalarApiReference();
             }
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseHttpsRedirection();
 
