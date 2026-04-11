@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ContactBook.API.Controllers;
 
+[Route("api/contacts")]
 public class ContactsController : BaseApiController
 {
     [HttpPost]

@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace ContactBook.API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
 public abstract class BaseApiController : ControllerBase
 {
     private IMediator? _mediator;
